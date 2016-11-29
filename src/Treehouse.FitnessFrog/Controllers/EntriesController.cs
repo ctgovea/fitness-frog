@@ -56,20 +56,7 @@ namespace Treehouse.FitnessFrog.Controllers
         //public ActionResult Add(DateTime? date, int? activityID, double? duration, Entry.IntensityLevel? intensity, bool? exclude, string notes)
         public ActionResult Add(Entry entry)
         {
-            //string date = Request.Form["Date"];
-
-            //DateTime dateValue;
-            //DateTime.TryParse(date, out dateValue);
-
-            // We can remove this now that our view uses the HTML helper methods that we're using to render our form
-            // field input or text area elements internally use ModelState to get the user's attempted values.
-
-            //ViewBag.date = ModelState["Date"].Value.AttemptedValue;
-            //ViewBag.ActivityID = ModelState["ActivityId"].Value.AttemptedValue;
-            //ViewBag.Duration = ModelState["Duration"].Value.AttemptedValue;
-            //ViewBag.Intensity = ModelState["Intensity"].Value.AttemptedValue;
-            //ViewBag.Exclude = ModelState["Exclude"].Value.AttemptedValue;
-            //ViewBag.Notes = ModelState["Notes"].Value.AttemptedValue;
+            //ModelState.AddModelError("", "This is a global message.");
 
             // If there aren't any "Duration field validation errors
             // then make sure that the duration is greater than "0".
