@@ -8,10 +8,11 @@
 
 <h2>@ViewBag.Title</h2>
 
-@Html.ValidationSummary("The following errors were found:", new { @class = "alert alert-danger" })   @*"ValidationSummary(true) will only show global messages"*@
 
 @using (Html.BeginForm())
 {
+    @Html.ValidationSummary("The following errors were found:", new { @class = "alert alert-danger" })   @*"ValidationSummary(true) will only show global messages"*@
+
     <div class="row">
 
         <div class="col-md-6">
